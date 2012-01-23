@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font: 16px/1.5 Helvetica, Arial, sans-serif;
+}
+
+section {
+  width: 800px;
+  height: 100%;
+  margin: 16px auto;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+h1 {
+  padding: 16px;
+  margin: 0;
+  color: #ccc;
+  border-bottom: 1px solid #ddd;
+}
+
+h1 strong {
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+li.ok {
+  background: #afa;
+  color: #060;
+}
+
+li.fail {
+  background: #faa;
+  color: #600;
+}
+
+li.pending {
+  background: #ffa;
+  color: #660;
+}
+
+p.summary {
+  position: relative;
+  padding: 16px 16px 16px 64px;
+  margin: 0;
+}
+
+section.ok .summary {
+  color: #060;
+}
+
+section.fail .summary {
+  color: #600;
+}
+
+section.pending .summary {
+  color: #660;
+}
+
+section.ok .summary:before,
+section.fail .summary:before,
+section.pending .summary:before {
+  position: absolute;
+  width: 48px;
+  text-align: center;
+  left: 16px;
+  top: 4px;
+  font-size: 2em;
+}
+
+section.ok .summary:before {
+  content: "✔";
+}
+
+section.fail .summary:before {
+  content: "✘";
+}
+
+section.pending .summary:before {
+  content: "☯";
+}
