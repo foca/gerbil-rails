@@ -1,4 +1,5 @@
 require "rails"
+require "generators/gerbil/install_generator"
 
 module Gerbil
   module Rails
