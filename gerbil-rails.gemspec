@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/foca/gerbil-rails"
   s.authors     = ["Nicolas Sanguinetti"]
   s.email       = "hi@nicolassanguinetti.info"
-  s.version     = "0.0.1"
+  s.version     = "0.1.0"
   s.platform    = Gem::Platform::RUBY
   s.add_dependency("rails")
 end
