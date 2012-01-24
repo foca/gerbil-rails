@@ -2,12 +2,18 @@
 <html>
   <head>
     <meta charset="utf8">
-    <title>Gerbil Spec Runner</title>
+    <title>⌛ spec sunner</title>
     <%= stylesheet_link_tag "gerbil/rails" %>
-    <%= javascript_include_tag "gerbil/rails" %>
-    <%= javascript_include_tag "spec" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <div class="reload">
+      <label for="reload">
+        <%= check_box_tag "reload", true, checked: true %>
+        Reload this page every 30 seconds?
+      </label>
+    </div>
+    <div id="results"></div>
+    <%= javascript_include_tag "gerbil/rails" %>
   </body>
 </html>

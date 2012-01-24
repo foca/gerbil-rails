@@ -4,6 +4,11 @@ html, body {
   font: 16px/1.5 Helvetica, Arial, sans-serif;
 }
 
+.reload {
+  width: 800px;
+  margin: 16px auto;
+}
+
 section {
   width: 800px;
   height: 100%;
