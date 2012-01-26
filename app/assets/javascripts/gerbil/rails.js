@@ -101,6 +101,9 @@ Gerbil.Rails.run = (function($) {
             success:  function() {
                 $("#results").empty()
             },
+            error: function(xhr, errorString, error) {
+                throw error;
+            },
             complete: function() {
                 setTimeout(function() {
                     var fail    = $("section.fail").length,
